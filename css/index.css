@@ -6,6 +6,12 @@
 
 header{
     font-family: 'Khand', sans-serif;
+    position: fixed;
+    margin: 0;
+    background-color: white;
+    top:0;
+    width: 100%;
+    padding: 15px 10px 10px 10px;
 }
 
 .logo-image-header{
@@ -23,14 +29,20 @@ main, footer{
     max-width: 400px;
     max-height: 100px;
     display: flex;
-    justify-content: space-around;;
+    justify-content: space-around;
 
+}
+
+.main-container > h2{
+    margin-top: 70px;
 }
 .header-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: white;
+    top:0;
 }
 
 .header-navbar{
@@ -38,6 +50,13 @@ main, footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
+}
+
+.header-navbar > a{
+    font-size: 23px;
+    color: black;
+    text-decoration: none;
 }
 
 .main-container{
@@ -108,6 +127,9 @@ form{
     align-items: center;
     margin-top: 35px;
     width: 100%;
+}
+.fire-image::before{
+    content: none;
 }
 
 .fire-image{
@@ -231,4 +253,67 @@ form{
     justify-content: end;
     font-size: 10px;
     margin-right: 18px;
+}
+
+.footer-navbar > a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+@media all and (max-width: 1000px){
+
+.tenor-trombone{
+    width: 220px;
+}
+
+
+}
+@media all and (max-width: 720px){
+
+.tenor-trombone{
+    width: 355px;
+}
+.price-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 400px;
+}
+
+
+.header-container{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-navbar{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.main-container > h2{
+    margin-top: 165px;
+    font-size: 20px;
+    font-weight: bold;
+}
+header{
+    padding: 20px 0px 0px 0px;
+}
+
+}
+@media all and (max-width: 720px){
+    .youtube-video{
+        height: 220px;
+        width: 95%;
+    }
+    img {
+        display: none;
+    }
+
 }
